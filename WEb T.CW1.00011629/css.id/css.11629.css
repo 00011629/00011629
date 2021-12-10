@@ -1,0 +1,467 @@
+html{
+    scroll-padding: 6rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.website{
+    position: absolute;
+    font-size: 10px;
+    color: white;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+     background-color: black;
+}
+#home{
+background-image:url("../image/jw-5d1448522b66d3.01045017.jpeg");
+	background-position: center;
+	height: 110vh;
+    width: 99%;
+    background-size: cover;
+    background-repeat: no-repeat;	
+    top: 0; right: 0; left: 0;
+    display: flex;
+    z-index: 5;
+}
+.nav-items{
+    position: fixed;
+   list-style: none;
+   display: flex;
+   gap: 1.2rem;
+   left: 410px;
+   color: white;
+   z-index: 5;
+}
+
+.nav-items a{
+    font-size: 1.1rem;
+    color: white;
+    margin: 0.8rem;
+
+}
+.nav-items a:hover{
+    text-transform: 1.3rem;
+    color: red;
+}
+
+.icons i{
+    cursor:pointer ;
+ font-size: 1.2rem;
+ color: white;
+}
+
+.icons{
+    position: fixed;
+ left: 1420px;
+}
+.icons i:hover{
+    color: red;
+}
+
+.search-bar-form{
+    position: absolute;
+    left: 1200px;
+    clip-path: polygon(0 0,100% 0,0 0);
+    color: white;
+    top: 5%;left: 0;right: 0;
+    padding:30px 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+#home .search-bar-form #search-bar{
+    width: 70%;
+    margin-left: 280px;
+    font-size: 1.2rem;
+    border-radius:0.5rem;
+    -webkit-border-radius:0.5rem;
+    -moz-border-radius:0.5rem;
+    -ms-border-radius:0.5rem;
+    -o-border-radius:0.5rem;
+} 
+ label:hover{
+   color: red;
+ }
+#japan{
+    position: absolute;
+    color: white;
+    font-size: 7rem;
+    top: 150px;
+    right: 600px;
+}
+
+.sunrising{
+    color:red;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 350px;
+    right: 665px;
+}
+
+@media(max-width:1200px)
+{ 
+    html{
+font-size: 60%;
+}
+}
+
+@media(max-width:993px)
+{ 
+    #home{
+padding: 2rem;
+
+}
+#home .nav-items{
+    gap:0;
+
+}
+
+}
+
+@media(max-width:800px)
+{ 
+#menu-bar{
+    display:inline-block;
+}   
+#home .nav-items{
+    position: absolute;
+    top: 100%;right: 0;left: 0;
+    padding: 1rem 2rem;
+
+
+}
+#home .nav-items a{
+    display: block;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+
+}
+}
+@media(max-width:550px){
+    .nav-items{
+        position:absolute;
+         margin-top: -65rem;
+         font-size: 1rem;
+    }
+    .nav-items a{
+         font-size: 1rem;
+         gap: 3rem;
+    }
+    #japan{
+        position: absolute;
+        font-size: 7rem;
+        right: 200px;
+    }
+    .sunrising{
+        position: absolute;
+        top: 300px;
+        font-size: 2rem;
+        right:230px;
+    }
+}
+
+#about{
+    display: inline-flex;
+    margin-top: 30px;
+}
+ #about img{
+     height: 90%;
+     border-radius: 0.2rem;
+     -webkit-border-radius: 0.2rem;
+     -moz-border-radius: 0.2rem;
+     -ms-border-radius: 0.2rem;
+     -o-border-radius: 0.2rem;
+}
+#about h2{
+    font-size: 3rem;
+    color: white;
+}
+#about span{
+    font-size: 2rem;
+    color: red;
+}
+ #about p{
+     font-size: 1.8rem;
+     color: white;
+     margin-bottom: 70px;
+ }
+
+#about a{
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 70px;
+}
+
+#about a:hover{
+    color: red;
+   text-decoration: underline;
+}
+
+#about .aboutus{
+    display:block;
+    margin-right: 360px;
+    margin-left: 90px;
+    border: 3.5px solid red;
+    background-color:black;
+    border-radius: .8rem;
+    color: white;
+    -webkit-border-radius: .8rem;
+    -moz-border-radius: .8rem;
+    -ms-border-radius: .8rem;
+    -o-border-radius: .8rem;
+}
+#about .aboutus:hover{
+    text-transform: 2.3rem;
+    color:gold;
+    text-decoration: none;
+    background-color: red;
+}
+
+#gallery .images-box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 30px;;
+
+}
+#gallery .images-box .image{
+    overflow: hidden;
+    box-shadow: 0.1rem 0.2rem black ;
+    border: 0.1rem solid red;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    flex:1 1 30rem;
+    height: 25rem;
+    position: relative;
+    z-index: 2;
+}
+
+#gallery .images-box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#gallery .images-box .image .content{
+    position: absolute;
+    top: -100%;left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: slategrey;
+
+}
+
+#gallery .images-box .image:hover .content{
+    top: 0;
+}
+
+
+#gallery .images-box .image .content h3{
+    font-size: 2.5rem;
+    color: red;
+
+}
+#gallery .images-box .image .content p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem 0;  
+}
+
+#gallery .images-box .image .content .btn{
+    font-size: 2.3rem;
+    border: 5px solid red;
+    color:goldenrod;
+    background-color:red;
+    text-decoration: none;
+}
+
+#gallery .images-box .image .content .btn:hover{
+   text-transform: 2.7rem;
+   color: darkred;
+   box-shadow:2px 2px 5px black;
+}
+
+
+#places .box-container{
+    display:inline-flex;
+    gap: 1rem;
+    margin-right: 50px;;
+}
+
+#places .box-container .box{
+    flex: 1 1 30rem;
+    overflow: hidden;
+    border: 0.1rem solid red;
+    border-radius: .2rem;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+
+#places .box-container img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    box-shadow:5px 5px black;
+}
+#places .box-container .box h3{
+    font-size: 2.5rem;
+    color: white; 
+}
+#places .box-container .box p{
+
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem 0;   
+}
+#places .box-container i{
+    margin-top: 40px;
+    font-size: 1.4rem;
+    color: gold;
+}
+
+#places .box-container p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+#places .box-container .box a{
+    font-size: 2.3rem;
+    border: 5px solid red;
+    border-radius: 0.5rem;
+    color:goldenrod;
+    background-color:red;
+    text-decoration: none;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+
+#visitJapan h1{
+    font-size: 3rem;
+    color: red;
+    text-align: center;
+}
+#visitJapan p{
+    font-size: 2rem;
+    color: white;
+   
+}
+
+ #tales{
+    display: inline-flex;
+    margin-top: 30px;
+}
+#tales .stories h1{
+    font-size: 3rem;
+    color: white;
+}
+
+ #tales .stories p{
+    font-size: 1.3rem;
+     color: white;
+}
+ #tales span{
+    font-size: 2rem;
+    color: red;
+}
+
+ #tales #img img{
+     border-radius: 0.8rem;
+     margin-left: 150px;
+     height: 90%;
+     border-radius: 0.2rem;
+     -webkit-border-radius: 0.8rem;
+     -moz-border-radius: 0.8rem;
+     -ms-border-radius: 0.8rem;
+     -o-border-radius: 0.8rem;
+}
+
+.verticalLine {
+    border-left:  thick solid #ff0000;
+    height: 100px;
+    margin-left: 30px;
+  }
+
+  #foooter .container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+  }
+
+  #footer .container .box{
+      pad: 1rem 0;
+      flex: 1 1 25rem;
+  }
+
+  #footer .container .box h3{
+      font-size: 2.5rem;
+      padding: 0.7 rem 0;
+      color: white;
+
+  }
+
+  #footer .container .box p{
+    font-size: 1.5rem;
+    padding: 0.7 rem 0;
+    color: white;
+    
+}
+
+#footer .container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.7 rem 0;
+    color: white;
+    
+}
+h1{
+    color: white;
+    font-size: 2rem;
+}
+
+.credit span{
+    color: red;
+    font-size: 2rem;
+
+}
+
+
+ .credit{
+    text-align: center;
+    padding: 1rem 2rem;
+    font-weight: normal;
+    color: white;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-top:0.1rem solid red ;
+}
+
+#footer .container .box i{
+    
+    color: red;
+    font-size: 2rem;
+}
+
+#footer .container .box:hover{
+    color: red;
+    text-transform: 3rem;
+}
+
+
+
+
